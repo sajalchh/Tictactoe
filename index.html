@@ -1,0 +1,82 @@
+<html><!DOCTYPE html>
+<head>
+	<title>
+		Tic-Tac-Toe
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/tic1.css">
+</head>
+<body>
+<table id="maint">
+	<tr>
+		<td id="c11"></td>
+		<td id="c12"></td>
+		<td colspan= 3><img class="imagetext" src="images/text tic tac toe.png">
+		</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr id="row2">
+		<td id="c21"></td>
+		<td id="c22"></td>
+		<td id="c23">
+			<button onclick="Play(c23,0)" class="maingame">
+				<div id="tabcell" class="mts"></div>
+			</button>
+		</td>
+		<td id="c24">
+			<button onclick="Play(c24,1)" class="maingame">
+				<div id="tabcell" class="mts"></div>
+			</button>
+		</td>
+		<td id="c25">
+			
+			<button onclick="Play(c25,2)" class="maingame">
+				<div id="tabcell" class="mts"></div>
+			</button>
+		</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr id="row3">
+		<td id="c31"></td>
+		<td id="c32"></td>
+		<td id="c33">
+			<button onclick="Play(c33,3)" class="maingame"></button>
+		</td>
+		<td id="c34">
+			<button onclick="Play(c34,4)" class="maingame"></button>
+		</td>
+		<td id="c35">
+			<button onclick="Play(c35,5)" class="maingame"></button>
+		</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr id="row4">
+		<td id="c41"></td>
+		<td id="c42"></td>
+		<td id="c43">
+			<button onclick="Play(this.parentNode,6)" class="maingame"></button>
+		</td>
+		<td id="c44">
+			<button onclick="Play(this.parentNode,7)" class="maingame"></button>
+		</td>
+		<td id="c45">
+			<button onclick="Play(this.parentNode,8)" class="maingame"></button>
+		</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td id="c51"></td>
+		<td id="c52"></td>
+		<td id="c53"></td>
+		<td id="c54"><button onclick="reset()" class="restart"><img src="images/refresh.png" class="resetimg"></button></td>
+		<td id="c55"></td>
+		<td></td>
+		<td></td>
+	</tr>			
+</table>
+</body>
+<script src="js/tic.js"></script>
+</html>
